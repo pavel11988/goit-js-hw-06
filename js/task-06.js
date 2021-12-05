@@ -1,13 +1,5 @@
 const inputWindow = document.querySelector('#validation-input');
 
-// inputWindow.addEventListener('blur', onInputBlur);
-
-// function onInputBlur () {
-//     console.log('!');
-// }
-// console.log(inputWindow.setAttribute('data-length', 4), parseInt(inputWindow.getAttribute('data-length')));
-
-
 inputWindow.addEventListener("blur", function( event ) {
     if (inputWindow.value.length != 6) 
     {
