@@ -16,10 +16,15 @@ const images = [
 
 const list = document.querySelector('.gallery');
 
+let arrImages = [];
+
 images.map(element => {
   const image = document.createElement("img");
   image.src = element.url;
   image.alt = element.alt;
-  list.append(image);
+  const strImg = `<img src=${image.src} alt=${image.alt}/>`;
+  arrImages.push(strImg) 
 })
 
+
+list.insertAdjacentHTML('beforeEnd', `${arrImages}`);
