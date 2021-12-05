@@ -28,6 +28,7 @@ function createBoxes (event) {
    
         refs.divBox.insertAdjacentHTML('beforeend', newDiv);
         refs.divBox.lastElementChild.style.backgroundColor = getRandomHexColor();
+        
         if (refs.divBox.children.length === 1)
         {
             refs.divBox.lastElementChild.style.width = `${prevSize}px`;
